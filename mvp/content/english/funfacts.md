@@ -1,5 +1,5 @@
 ---
-title: "Colaboraciones"
+title: "Estadísticas"
 bg_image: "images/backgrounds/funfact-bg.jpg"
 funfacts:
 # funfacts item loop

@@ -9,10 +9,10 @@ testimonial_slider:
   content : '"Hago lo que me gusta porque algún día me voy a morir"'
             
 # slider item loop
-- name : "Valentín Frugasm"
-  image : "images/clients/client2.jpg"
-  designation : "Artes Visuales"
-  content : '"No sé ni el apellido de Valentín, menos voy a saber una frase."'
+- name : "Valentín Mattera"
+  image : "images/clients/valen.jpeg"
+  designation : "Cámara y edición"
+  content : '                                                      '
             
 # slider item loop
 - name : "Mark Suquerberg"
