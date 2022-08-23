@@ -1,0 +1,6 @@
+Este default corre
+- hugo server 
+- python -m http.server (public)
+
+Ya está todo optimizado
+
