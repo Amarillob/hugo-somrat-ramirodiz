@@ -34,7 +34,7 @@
           </div>
           {{ with .Params.button }}
           {{ if .enable }}
-          <a class="hireMe" href="{{ .link | relURL}}">{{ .label }}</a>
+          <a class="hireMe" href="{{ .link | relURL}}" target="_blank">{{ .label }}</a>
           {{ end }}
           {{ end }}
         </div>
@@ -64,7 +64,7 @@
               <ul class="list-inline fullscreen-nav-holder">
                 {{ range site.Menus.main }}
                 <li><a class="text-uppercase"
-                    href="{{if .Pre}}{{site.BaseURL | absLangURL}}{{.Pre}}{{ .URL }}{{else}}{{.URL | absLangURL}}{{end}}">{{ .Name }}</a>
+                    href="{{if .Pre}}{{site.BaseURL | absLangURL}}{{.Pre}}{{ .URL }}{{else}}{{.URL | absLangURL}}{{end}}" target="_blank" >{{ .Name }}</a>
                 </li>
                 {{ end }}
               </ul>
@@ -72,7 +72,7 @@
             <div class="full-nav-icon-holder">
               <ul class="full-nav-icons list-inline">
                 {{ range site.Params.social }}
-                <li><a href="{{ .link | safeURL }}"><i class="{{ .icon }}"></i></a></li>
+                <li><a href="{{ .link | safeURL }}" target="_blank" ><i class="{{ .icon }}"></i></a></li>
                 {{ end }}
               </ul>
             </div>
@@ -93,7 +93,7 @@
       <ul class="desktop-menu list-inline mb-0" id="desktop-menu">
         {{ range site.Menus.main }}
         <li class="menu-item hvr-underline-from-left 1"><a
-            href="{{if .Pre}}{{site.BaseURL | absLangURL}}{{.Pre}}{{ .URL }}{{else}}{{.URL | absLangURL}}{{end}}">{{ .Name }}</a>
+            href="{{if .Pre}}{{site.BaseURL | absLangURL}}{{.Pre}}{{ .URL }}{{else}}{{.URL | absLangURL}}{{end}}" target="_blank"  >{{ .Name }}</a>
         </li>
         {{ end }}
       </ul>
@@ -129,7 +129,7 @@
             <span></span>
           </div>
         </a>
-        <div class="mobile-menu-logo"><a href="{{site.BaseURL | relLangURL }}"><img class="img-fluid"
+        <div class="mobile-menu-logo"><a href="{{site.BaseURL | relLangURL }}" target="_blank"><img class="img-fluid"
               src="{{ site.Params.logo_dark | absURL }}" alt="{{ site.Title }}"></a>
         </div>
         <div class="menu-slider">
@@ -137,7 +137,7 @@
             <ul class="mobile-menu-list">
               {{ range site.Menus.main }}
               <li class="hvr-shutter-out-vertical mobile-menu-item 1"><a
-                  href="{{if .Pre}}{{site.BaseURL | absLangURL}}{{.Pre}}{{ .URL }}{{else}}{{.URL | absLangURL}}{{end}}">{{ .Name }}</a>
+                  href="{{if .Pre}}{{site.BaseURL | absLangURL}}{{.Pre}}{{ .URL }}{{else}}{{.URL | absLangURL}}{{end}}" target="_blank">{{ .Name }}</a>
               </li>
               {{ end }}
             </ul>
@@ -164,7 +164,7 @@
             {{ end }}
             <ul class="mobile-menu-icons list-inline">
               {{ range site.Params.social }}
-              <li><a href="{{ .link | safeURL }}"><i class="{{ .icon }}"></i></a></li>
+              <li><a href="{{ .link | safeURL }}" target="_blank" ><i class="{{ .icon }}"></i></a></li>
               {{ end }}
             </ul>
           </nav>
@@ -189,7 +189,10 @@
           {{ if .enable }}
           <div class = "content-button">
             <!--      <a href="{{ .link | absURL }}" class="fab fa-youtube" style="font-size:36px"> {{ .label }} &nbsp; &nbsp; &nbsp; </a>       -->
-           <a href="{{ .link | absURL }}" class="fab fa-youtube" style="font-size:36px"> {{ .label }} </a>
+           <a href="{{ .link | absURL }}" target="_blank" class="fab fa-youtube" style="font-size:36px"> {{ .label }} </a>
+          
+          
+          
           </div>
           {{ end }}
           {{ end }}
@@ -310,7 +313,7 @@
         </div>
         {{ if gt (len .Data.Pages) 6}}
         <div class="text-center wow fadeInUp mt-4" data-wow-duration="1.5s">
-          <a href = "https://www.youtube.com/channel/UC59K-RMY7AFWh2Run7Gk6Rw/featured" class="btn btn-primary">Ver más</a>
+          <a href = "https://www.youtube.com/channel/UC59K-RMY7AFWh2Run7Gk6Rw/featured" target="_blank" class="btn btn-primary">Ver más</a>
           
           
          <!-- <a href="{{`portfolio` | absURL}}" class="btn btn-primary">Ver más</a>-->
@@ -413,7 +416,7 @@
         <hr>
         <ul class="footer-icons list-inline">
           {{ range site.Params.social }}
-          <li><a href="{{ .link | safeURL }}"><i class="{{ .icon }}"></i></a></li>
+          <li><a href="{{ .link | safeURL }}" target="_blank"><i class="{{ .icon }}"></i></a></li>
           {{ end }}
         </ul>
         <div class="to-top">
