@@ -183,8 +183,8 @@ html {
   .logo {
     position: absolute;
     z-index: 10;
-    top: 30px;
-    left: 25px;
+    top: -100px;
+    left: -40px;
   }
   
   .no-js .logo {
@@ -192,7 +192,7 @@ html {
   }
   
   .logo img {
-    width: 400px;
+    width: 600px;
   }
   
   .owl-carousel.owl-full-width {
@@ -711,7 +711,8 @@ html {
     right: 0;
     height: 55px;
     top: 0;
-    background: #fff;
+    background: rgb(14, 13, 13);
+    /*background: rgb(14, 13, 13);*/
     box-shadow: 0px 0px 4px 0px;
     transition: all 0.5s;
   }
@@ -721,13 +722,13 @@ html {
   }
   
   .mobile-menu-logo img {
-    height: 45px;
+    height: 180px;
   }
   
   .mobile-menu-logo {
     position: absolute;
-    left: 15px;
-    top: 4px;
+    left: -20px;
+    top: -62px;
   }
   
   .mobile-menu a {

@@ -65,10 +65,10 @@ link = "plugins/owl-carousel/owl.carousel.min.js"
 favicon = "images/navegador.png"
 #favicon = "images/favicon.png"
 
-logo_light = "images/my-project-2(recortada).png"
+logo_light = "images/wob.png"
 #logo_light = "images/logo.png"
 
-logo_dark = "images/my-project-2(recortada).png"
+logo_dark = "images/wob.png"
 logo_width = "150px"
 # Meta data
 description = "This is meta description"
