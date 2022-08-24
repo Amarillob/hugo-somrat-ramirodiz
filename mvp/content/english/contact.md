@@ -1,7 +1,7 @@
 ---
 title : "Contacto directo"
 bg_image: "images/backgrounds/contact-us-bg.jpg"
-form_action: "#" # works with https://formspree
+form_action: "https://formspree.io/f/xjvzkwlb" # works with https://formspree
 name: "Nombre"
 email: "Gmail"
 message: "Mensaje"
