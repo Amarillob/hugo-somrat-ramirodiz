@@ -274,7 +274,14 @@
                  <img src="{{ .Params.image | absURL }}" alt="{{ .Title | markdownify }}">
               </a>
               <div class="item-caption">
-                <h2 class="mt-2"><a class="text-white" href="{{.Permalink}}">{{ .Title | markdownify }}</a></h2>
+                <h2 class="mt-2">
+                  <a class="mt-2" href="{{.LinkTitle}}" target="_blank">
+                    <!--{{ .Title | markdownify }}-->
+                    <p style = "color:rgb(0, 119, 255);">
+                      <u>{{ .Title | markdownify }}</u>
+                    </p>
+                  </a>
+                </h2>
                 {{ range .Params.categories }}
                 <p class="mb-0 text-light">{{ . | title }}</p>
                 {{ end }}
